@@ -14,8 +14,7 @@ img {
 }
 
 .termsContainer {
-	width: 600px;
-    height: 200px;
+	width: 35%;
 	margin: 25px auto 0 auto;
 }
 
@@ -35,9 +34,8 @@ img {
 	background-color: #33FFB2; 
 	color: white;
 	font-size: 40px;
-	margin: 75px auto 50px auto;
+	margin: 5% auto 4% auto;
 	display: block;
-	position: relative;
 }
 
 #submitButton:disabled {
@@ -93,7 +91,7 @@ img {
 
 #success {
 	width: 80%;
-	height: 250px;
+	height: 35%;
 	background-color: #33FFB2;
 	color: white;
 	font-family: "Verdana";
