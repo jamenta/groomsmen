@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="/css/groomsmenStyle.css" media="screen" />
+
+<head>
+	<title>Amenta Wedding</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
+	<script src="/js/firebase-config.js"></script>
+	<script src="/js/imageSlide.js"></script>
+	<script src="/js/groomsmen.js"></script>
+</head>
+
+
+<body>
+	<header role="banner">
+		<img src="/images/cigar.jpg" alt="Banner Image"/>
+	</header>
+	<div align="center" >
+		<div id="question">Dan, will you suit up and <br><b>be my Groomsman?</b></div>
+		<img src="/images/swirl.png" alt="Swirl Image" style="padding-top: 25px"/>			
+	</div>
+	<div class="slideshow-container">
+		<div class="mySlides fade" style="display: block;">
+			<img src="/images/dan/dan1.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade" style="display: none;">
+			<img src="/images/dan/dan2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade" style="display: none;">
+			<img src="/images/dan/dan3.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade" style="display: none;">
+			<img src="/images/dan/dan4.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade" style="display: none;">
+			<img src="/images/dan/dan5.jpg" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<div class="termsContainer">
+		<div class="terms">
+			<h3>Terms and Conditions</h3>
+		
+			<h4>Agreement</h4>
+		
+			<p>As a Groomsman, I understand there are associated responsibilities that come with that duty.<br>Those responsibilities include, but are not limited too:</p>
+		
+			<ul>
+				<li>Putting the bride's happiness first (attempt to at least)</li>
+				<li>Providing any updates of major sporting events to groom during wedding related activities</li>
+				<li>Do I even need to mention the bachelor party?</li>
+				<li><b>ENSURING YOU AND YOUR FELLOW MATES ARE HAVING FUN</b></li>
+			</ul>
+		
+			<p>Failure to adhere to these responsibilities has no consequences</p> 
+			
+		</div>
+		<input type="checkbox" name="terms" id="termsCheckbox" style="margin-top: 10px">  I accept the Terms and Conditions
+	</div>
+	<div>
+		<button type="submit" id="submitButton" onclick="handleClick()">Submit</button>
+	</div>
+</body>
+	
+</body>
+
+</html>
+
