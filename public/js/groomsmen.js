@@ -4,17 +4,10 @@ $(document).ready(function(){
 	}).change()
 })  
 
-function handleClick() {
-	firebase.initializeApp(config);
-	var data = ({
-		name: "Nick",
+function handleClick(groomsman) {
+	database.ref('responses').push().set({
+		name: groomsman,
 		response: true
 	});
-	var pushEntry = firebase.database().ref('Responses/').push();
-	pushEntry.set({
-		name: "Nick",
-		response: true
-	});
-	console.log(data);
 	location.href = "success.html";
 }

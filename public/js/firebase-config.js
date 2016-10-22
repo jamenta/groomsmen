@@ -4,3 +4,6 @@ var config = {
     databaseURL: "https://groomsmen-fde65.firebaseio.com/",
 	storageBucket: "groomsmen-fde65.appspot.com"
  };
+ firebase.initializeApp(config);
+
+var database = firebase.database();
